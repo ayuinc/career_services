@@ -4665,6 +4665,9 @@ body.form-on-submit {
 .text-black {
   color: #000000; }
 
+.super-bold {
+  font-weight: 900; }
+
 a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link, .language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text, #header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, .language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text, #header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, #header .tool-bar .search-form a.btn.form-text, #header-on-scroll .tool-bar .search-form a.btn.form-text, #header .tool-bar .search-form a.form-text.form-submit, #header-on-scroll .tool-bar .search-form a.form-text.form-submit, #header .tool-bar .search-form a.form-control.form-submit, #header-on-scroll .tool-bar .search-form a.form-control.form-submit,
 button.btn.form-control,
 #header .tool-bar .search-form button.btn.form-text,
@@ -7094,6 +7097,9 @@ body.form-on-submit {
 
 .text-black {
   color: #000000; }
+
+.super-bold {
+  font-weight: 900; }
 
 #header, #header-on-scroll {
   position: relative;
