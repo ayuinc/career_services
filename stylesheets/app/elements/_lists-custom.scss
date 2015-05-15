@@ -1,0 +1,120 @@
+$list-custom-height: 20%;
+
+.list-custom ul {
+	padding-left: $grid-gutter-width !important;
+}
+.list-custom {
+	padding-left: $container-fluid;
+}
+.list-custom ul,
+.list-custom {
+	@include list-unstyled;
+	li {
+		position: relative;
+		margin-bottom: 21px;
+		margin-bottom: rem(21px);
+		&:before {
+			content: "";
+			$left-pos: -$grid-gutter-width;
+			@include position(absolute, 3px null null $left-pos);
+			width: 7px;
+			height: 7px;
+			background-color: $brand-primary;
+		}
+		ul {
+			li {
+				&:first-child {
+					margin-top: 21px;
+					margin-top: rem(21px);
+				}
+			}
+		}
+	}
+}
+
+.list-custom-left ul, 
+.list-custom-left {
+	@include list-unstyled;
+	@include clearfix;
+	li {
+		float: left;
+		width: 100 - $list-custom-height;
+		&:first-child {
+			width: $list-custom-height;
+			height: auto;
+		}
+		&:last-child {
+			@include calc(width, "100% - #{$list-custom-height}");
+		}
+	}
+	@media #{$sm-down} {
+		li {
+			width: 100%;
+			&:first-child {
+				width: 100%;
+			}
+			&:last-child {
+				padding-top: 14px;
+				padding-top: rem(14px);
+				width: 100%;
+			}
+		}
+	}
+}
+
+// HOVER LIST 
+.list-hover {
+	> li {
+		> div {
+			// @include flex-middle-center;
+			min-height: $list-hover-height;
+			color: $gray-dark;
+			padding: $container-fluid + 7;
+			h3 {
+				min-height: 98px;
+			}
+		}
+	}
+	@for $i from 1 through length($brand-colors-list) {
+		&.list-hover-#{nth($brand-colors-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($brand-colors-list, $i)};
+				}
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-list) {
+		&.list-hover-#{nth($grayscale-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($grayscale-list, $i)};
+				}
+			}
+		}
+	}
+	&.list-hover-unstyled {
+		> li {
+			> div:not(.banner-pic) {
+				min-height: 0;
+				padding: 0;
+				h3 {
+					min-height: 0;
+				}
+			}
+		}
+	}
+}
+
+// LIST CUSTOM FOR LEAD CHILDREN 
+.lead-ch {
+	.list-custom ul,
+	.list-custom,
+	&.list-custom {
+		li {
+			&:before {
+				top: 12px;
+			}
+		}
+	}
+}

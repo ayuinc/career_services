@@ -1,0 +1,87 @@
+.grid-list-hover {
+	> li {
+		position: relative;
+		padding: $container-fluid / 2 !important;
+		padding: rem($container-fluid / 2) !important;
+		> div:not(.date) {
+			border: 1px solid $gray-light;
+			@include flex-middle-center;
+			height: $grid-list-hover-height;
+			color: $gray-dark;
+			text-align: center;
+			padding: $container-fluid + 7;
+			h3 {
+				min-height: 77px;
+				font-size: 21px !important;
+			}
+		}
+		&:hover {
+			background-color: rgba($brand-info, 0.7);
+			> div {
+				color: white;
+				border: none;
+			}
+		}
+	}
+	@for $i from 1 through length($brand-colors-list) {
+		&.grid-list-hover-#{nth($brand-colors-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($brand-colors-list, $i)};
+				}
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-list) {
+		&.grid-list-hover-#{nth($grayscale-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($grayscale-list, $i)};
+				}
+			}
+		}
+	}
+	&.grid-list-hover-left {
+		> li {
+			> div {
+				@include flex-middle;
+				text-align: left;
+			}
+		}
+	}
+	&.grid-list-hover-calendar {
+		div:not(.date) {
+			border: none;
+		}
+		.date {
+			@include position(absolute, 0 null null $container-fluid);	
+			background: $gray;
+			padding: $container-fluid;
+			.num,
+			.month {
+				color: white;
+				text-transform: uppercase;
+			}
+			.num {
+				@include bold;
+			}
+			.month {
+				font-size: $font-size-h3;
+			}
+		}
+		> li {
+			&:hover {
+				background-color: $gray-light;
+				> div:not(.date) {
+					color: $gray-dark;
+					small {
+						color: $gray;
+					}
+				}
+				.date {
+					background-color: $brand-primary;
+				}
+			}
+		}
+	}
+}

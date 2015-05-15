@@ -1,0 +1,137 @@
+// Bootstrap 3 Custom Buttons
+a.btn,
+button.btn,
+input[type="submit"].btn,
+.btn {
+	// FORM CONTROL
+	&.form-control {
+		height: auto;
+	}
+	&.borderless {
+		border-radius: 0 !important;
+	}
+	&.btn-xs {
+		font-size: $font-size-base - 2;
+		padding: 2px 9px;
+		padding: rem(2px) rem(9px);
+	}
+	&.btn-xl {
+		font-size: $font-size-h3;
+		padding: 12px 21px;
+		padding: rem(12px) rem(21px);
+	}
+	@for $i from 1 through length($social-colors-list) {
+		&.btn-#{nth($social-colors-sufix-list, $i)} {
+			background: #{nth($social-colors-list, $i)};
+			color: white;
+			&:hover {
+				background: #{darken(nth($social-colors-list, $i), 14%)};
+			}
+		}
+	}
+	&.see-more {
+		&:after {
+			content: "\e62a";
+			font-family: 'icomoon';
+			font-weight: bold;
+			margin-left: $container-fluid;
+		}
+	}
+}
+a.btn,
+button.btn,
+input[type="submit"].btn,
+.btn {
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-outline {
+			background: none;
+			border: 2px solid #{nth($brand-colors-list, $i)};
+			border-radius: 0;
+			color: #{nth($brand-colors-list, $i)};
+			&:hover {
+				background-color: none;
+				border-radius: 0;
+				border: 2px solid $brand-primary;
+				color: $brand-primary;
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-outline {
+			background: none;
+			border: 2px solid #{lighten(nth($grayscale-list, $i), 21%)};
+			border-radius: 0;
+			color: #{lighten(nth($grayscale-list, $i), 21%)};
+			&:hover {
+				background: none;
+				border-radius: 0;
+				border: 2px solid $brand-primary;
+				color: $brand-primary;
+			}
+		}
+	}
+}
+
+a.btn,
+button.btn,
+input[type="submit"].btn,
+.btn {
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-custom {
+			background-color: #{nth($brand-colors-list, $i)};
+			// border: 2px solid #{lighten(nth($brand-colors-list, $i), 21%)};
+			// border-radius: 0;
+			color: white !important;
+			// color: #{nth($brand-colors-list, $i)};
+			&:hover {
+				background-color: #{darken(nth($brand-colors-list, $i), 9%)};
+				// border-radius: 0;
+				// border: 2px solid #{nth($brand-colors-list, $i)};
+				color: white !important;
+				// color: #{darken(nth($brand-colors-list, $i), 21%)};
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-custom {
+			background-color: #{lighten(nth($grayscale-list, $i), 21%)};
+			// border: 2px solid #{lighten(nth($grayscale-list, $i), 21%)};
+			// border-radius: 0;
+			color: white !important;
+			// color: #{nth($grayscale-list, $i)};
+			&:hover {
+				background-color: #{nth($grayscale-list, $i)};
+				// border-radius: 0;
+				// border: 2px solid #{nth($grayscale-list, $i)};
+				color: white !important;
+				// color: #{darken(nth($grayscale-list, $i), 21%)};
+			}
+		}
+	}
+}
+
+a.btn,
+button.btn,
+input[type="submit"].btn,
+.btn {
+	@for $i from 1 through length($social-colors-sufix-list) {
+		&.btn-#{nth($social-colors-sufix-list, $i)}.btn-circle {
+			background-color: #{lighten(nth($social-colors-list, $i), 21%)};
+			// border: 2px solid #{lighten(nth($social-colors-list, $i), 21%)};
+			border-radius: 50%;
+			color: white !important;
+			width: 35px;
+			height: 35px;
+			padding: 0;
+			@include flex-middle-center;
+			// color: #{nth($social-colors-list, $i)};
+			&:hover {
+				background-color: #{nth($social-colors-list, $i)};
+				// border-radius: 0;
+				// border: 2px solid #{nth($social-colors-list, $i)};
+				color: white !important;
+				// color: #{darken(nth($social-colors-list, $i), 21%)};
+			}
+		}
+	}
+}

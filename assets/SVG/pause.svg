@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-493.000000, -404.000000)" fill="#666666">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(493.000000, 404.000000)">
+                <path d="M13.5,-3.55271368e-15 C6.02790698,-3.55271368e-15 0,6.02790698 0,13.5 C0,20.972093 6.02790698,27 13.5,27 C20.972093,27 27,20.9093023 27,13.5 C27,6.09069767 20.9093023,-3.55271368e-15 13.5,-3.55271368e-15 L13.5,-3.55271368e-15 Z M13.5,25.6813953 C6.71860465,25.6813953 1.25581395,20.2186047 1.25581395,13.5 C1.25581395,6.78139535 6.71860465,1.25581395 13.5,1.25581395 C20.2813953,1.25581395 25.744186,6.71860465 25.744186,13.5 C25.744186,20.2813953 20.2186047,25.6813953 13.5,25.6813953 L13.5,25.6813953 Z" id="Shape-2" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="14.6930233" y="6.51348837" width="2.81302326" height="12.8930233"></rect>
+                <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.0046512" y="6.51348837" width="2.81302326" height="12.8930233"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

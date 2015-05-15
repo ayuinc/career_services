@@ -1,0 +1,50 @@
+// BANNERS
+.banner {
+	@include clearfix;
+	.banner-pic,
+	.banner-content {
+		position: relative;
+	}
+	.banner-pic {
+		@include bg-img-control;
+		min-height: $banner-height;
+		@media #{$sm-up} {
+			padding: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.banner-label {
+		@include position(absolute, -14px null null $container-fluid);
+		text-align: center;
+		padding: 3px 7px;
+		span {
+			text-transform: uppercase;
+		}
+	}
+	.banner-content {
+		min-height: $banner-height;
+		min-height: rem($banner-height);
+		@include flex-middle;
+		padding: 0 $container-fluid * 2;
+		@media #{$sm-down} {
+			min-height: $banner-height / 2;
+			min-height: rem($banner-height / 2);
+			padding: 0 $container-fluid;
+		}
+	}
+	a:not(.btn) {
+		color: $gray;
+	}
+	&:hover {
+		background-color: $gray-lighter;
+	}
+	&.banner-label-bottom {
+		.banner-label {
+			@include position(absolute, null null 0 $container-fluid);
+			top: inherit;
+		}
+	}
+}

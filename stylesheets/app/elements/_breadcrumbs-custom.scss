@@ -1,0 +1,74 @@
+// BREADCRUMBS
+.breadcrumbs-custom {
+	@include position(absolute, null 0 -70px 0);
+	z-index: 9000;
+	.breadcrumb {
+		li {
+			text-transform: capitalize;
+			a {
+				color: white;
+				&:hover {
+
+				}
+				&.active {
+					color: $brand-primary;
+				}
+			}
+			&.active {
+				a {
+					span {
+						@include bold;
+						border-bottom: 2px solid white;
+					}
+				}
+			}
+		}
+	}	
+}
+
+.breadcrumbs-light,
+.breadcrumbs-dark {
+	.pane-page-breadcrumb {
+		@include position(absolute, 28px null null null);
+		z-index: 1980;
+		width: 100%;
+		@media #{$sm-down} {
+			display: none;
+		}
+		.pane-content {
+			@extend .container-sm;
+			.breadcrumb {
+				@include list-unstyled;
+				text-transform: capitalize;
+				@include thin;
+			}
+		}
+	}
+}
+
+.page-page-61 {
+	.pane-page-breadcrumb {
+		@include position(absolute, -130px null null -14px);
+	}
+}
+
+.node-type-blog {
+	.pane-page-breadcrumb {
+		@include position(absolute, -49px null null -14px);
+	}
+}
+
+.breadcrumbs-light {
+	.breadcrumb {
+		color: white;
+	}
+}
+
+.page-taxonomy-term {
+	.body {
+		padding-top: 70px;
+	}
+	.breadcrumbs-light .breadcrumb {
+		color: $gray-dark;
+	}
+}

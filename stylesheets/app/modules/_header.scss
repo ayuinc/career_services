@@ -1,0 +1,363 @@
+#header {
+	@include position(relative, 0 0 null 0);
+	.tool-bar,
+	.nav-main {
+		@include clearfix;
+		position: relative;
+		z-index: 2000;
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	}
+	.tool-bar {
+		.left {
+			.nav-list {
+				li {
+					a {
+						&:hover {
+							color: #595858;
+						}
+					}
+				}
+			}
+		}
+	}
+	.nav-main {
+		min-height: 35px;
+		background: white;
+		.logo {
+			width: 150px;
+			height: 106px;
+		}
+		.nav-display-triggers {
+			@include clearfix;
+			@include list-unstyled;
+			li {
+				float: left;
+				a {
+					display: block;
+					text-align: center;
+					padding: 21px 0;
+					padding: rem(21px) 0;
+					color: $gray;
+					background: white;
+					min-width: 135px;
+					min-width: rem(135px);
+					height: 106px;
+					&:hover,
+					&.active {
+						background: $gray-lighter;
+						color: $link-color;
+					}
+					div {
+						i {
+							font-size: $font-size-h1;
+						}
+					}
+					span {
+						display: block;
+						margin-top: $padding-base-vertical;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.left {
+		}
+		.right {
+		}
+	}
+	// NAVIGATION DISPLAY
+	.nav-display {
+		@include position(absolute, null 0 0 0);
+		@include clearfix;
+		width: 100%;
+		background: rgba($gray-lighter, 0.97);
+		@include transition(all 0.2s ease-in-out);
+		@include transform(translateY(-100%));
+		z-index: 1990;
+		.nav-display-left,
+		.nav-display-right {
+			min-height: 430px;
+			width: 50%;
+			@include flex-middle-center;
+		}
+		.nav-display-left {
+			float: left;
+			> div {
+				> h1,
+				> .h1 {
+					text-transform: uppercase;
+					@include bold;
+					color: $gray;
+					span {
+						@include bold;
+						color: $gray-darker;
+					}
+				}
+			}
+		}
+		.nav-display-right {
+			float: right;
+			> div {
+				@include clearfix;
+				ul {
+					@include list-unstyled;
+					float: left;
+					li {
+						padding: $padding-base-vertical 0;
+						padding: rem($padding-base-vertical) 0;
+						a {
+							color: $gray-darker;
+							display: block;
+							text-transform: uppercase;
+							border: none;
+							&:hover,
+							&.active {
+								color: $brand-primary;
+								span {
+									color: $brand-primary;
+								}
+							}
+							span {
+								display: block;
+								color: $gray;
+							}
+						}
+					}
+					&:last-child {
+						padding-left: 56px;
+						padding-left: rem(56px);
+					}
+				}
+			}
+		}
+		.nav-display-close {
+			font-size: $font-size-h3;
+			color: $gray;
+			text-transform: uppercase;
+			@include thin;
+			@include position(absolute, $container-fluid $container-fluid null null);
+		}
+	}
+}
+
+// DISPLAY CORRESPONDING NAVS
+#header {
+	@for $i from 1 through 10 {
+		&.display.nav-display-#{$i} {
+			#nav-display-#{$i} {
+				@include transition(all 0.2s ease-in-out);
+				@include transform(translateY(100%));
+			}
+		}
+	}
+}
+
+#header-on-scroll {
+	@for $i from 1 through 10 {
+		&.display.nav-shrink-display-#{$i} {
+			#nav-shrink-display-#{$i} {
+				@include transition(all 0.2s ease-in-out);
+				@include transform(translateY(100%));
+			}
+		}
+	}
+}
+
+.nav-list {
+	@include clearfix;
+	@include list-unstyled;
+	li {
+		float: left;
+		a {
+			&:hover,
+			&.active {}
+		}
+	}
+	&.nav-list-right {
+		li {
+			float: right;
+		}	
+	}
+}
+
+// HEADER SHRINK TRIGGER
+.hero-unit {
+	.header-trigger {
+		@include position(absolute, null 0 -280px 0);
+	}
+}
+.body {
+	.header-trigger {
+		@include position(absolute, 560px 0 null 0);
+	}	
+}
+
+// HEADER ON SCROLL
+$header-on-scroll-height: 56px;
+#header-on-scroll {
+	@extend #header;
+	@include position(fixed, 0 0 null 0);
+	width: 100%;
+	@include transform(translateY(-150%));
+	@include transition(all 0.2s ease-in-out);
+	z-index: 3000;
+	.nav-main {
+		height: $header-on-scroll-height;
+		background-color: $gray-lighter;
+		.logo {
+			width: 150px;
+			@media #{$sm-down} {
+				width: 100%;
+			}
+			height: $header-on-scroll-height;
+			padding: 4px 0;
+			img {
+				width: 35px;
+				height: auto;
+			}
+		}
+		.nav-display-triggers {
+			@include clearfix;
+			@include list-unstyled;
+			li {
+				float: left;
+				a {
+					display: block;
+					text-align: center;
+					padding: 12px 0;
+					padding: rem(12px) 0;
+					color: $gray;
+					background-color: $gray-lighter;
+					min-width: 135px;
+					min-width: rem(135px);
+					height: $header-on-scroll-height;
+					&:hover,
+					&.active {
+						background: $gray-lighter;
+						color: $link-color;
+					}
+					div {
+						i {
+							font-size: $font-size-h1;
+						}
+					}
+					span {
+						display: block;
+						margin-top: $padding-base-vertical;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.left {
+		}
+		.right {
+			height: $header-on-scroll-height;			
+			padding: 9px 0;
+		}
+		.menu-trigger {
+			width: 35px;
+			height: 35px;
+			padding: 7px 0;
+			font-size: 21px; 
+			text-align: center;
+			display: block;
+			// border: 1px solid $brand-primary;
+		}
+	}
+	.nav-display {
+		z-index: 2990;
+	}
+}
+
+.site-wrapper {
+	&.header-shrink {
+		#header-on-scroll {
+			@include transform(translateY(0%));
+			@include transition(all 0.2s ease-in-out);
+		}
+	}
+}
+
+// LANGUAGE SELECTOR
+.title.block-title {
+	display: none;
+}
+
+.language-switcher-locale-url {
+	@include list-unstyled;
+	@include clearfix;
+	li {
+		float: left;
+		a.language-link {
+			@extend .btn;
+			@extend .btn-sm;
+			@include box-shadow(none);
+			outline: none;
+			background-image: none;
+			background-color: lighten($gray, 21%);
+			color: white;
+			padding: 2px 9px;
+			padding: rem(2px) rem(9px);
+			&:hover,
+			&.active {
+				@include box-shadow(none);
+				outline: none;
+				background-image: none;
+				background-color: $gray;
+				color: white;
+			}
+		}
+		&:first-child {
+			a.language-link {
+				margin-right: 7px;
+			}
+		}
+	}
+}
+.locale-untranslated {
+	display: none;
+}
+
+// TOOL BAR SEARCH FORM 
+#header {
+	.tool-bar {
+		.search-form {
+			margin: 0;
+			.form-item {
+				@extend .form-group;
+				display: inline-block;
+				margin: 0;
+				label {
+					display: none;
+				}
+			}
+			.form-text {
+				width: 210px;
+				@extend .form-control;
+				@extend .input-sm;
+			}
+			.form-submit {
+				@extend .btn;
+				@extend .btn-sm;
+				background-color: lighten($gray, 21%);
+				color: white;
+				padding: 2px 9px;
+				padding: rem(2px) rem(9px);
+				margin-top: -2px;
+				&:hover {
+					@include box-shadow(none);
+					outline: none;
+					background-image: none;
+					background-color: $gray;
+					color: white;
+				}
+			}
+		}
+	}
+} 

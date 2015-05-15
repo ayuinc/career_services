@@ -1,0 +1,22 @@
+.calendar {
+	text-align: center;
+	.row {
+		> div {
+			min-height: 140px; 
+			@include flex-middle-center;
+			.title {
+				margin-bottom: $container-fluid;
+				span {
+					
+				}
+			}
+			.date {
+				span {
+					font-size: $font-size-h4;
+					@include light;
+					color: $gray;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+uglifyjs TweenMax.min.js ScrollToPlugin.min.js jquery.scrollmagic.min.js transition.js carousel.js imagesloaded.pkgd.min.js isotope.pkgd.min.js isotope.js jquery.validate.js forms-control.js ScrambleTextPlugin.min.js tickerscrambler.js pgwbrowser.min.js nav-control.js layout-control.js scroll-control.js section-scroll.js videojs.js -co utec.min.js

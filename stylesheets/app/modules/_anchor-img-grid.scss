@@ -1,0 +1,114 @@
+.anchor-img-grid {
+	@include make-row;
+	[class*="col-"] {
+		padding: 0;
+	}
+	[class*="anchor-block-"] {
+		@include clearfix;
+		position: relative;
+		.pic {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			@include position(absolute, $container-fluid $container-fluid $container-fluid $container-fluid);
+		}
+		.overlay {
+			@include position(absolute, $container-fluid $container-fluid $container-fluid $container-fluid);
+			@include flex-middle-center;
+			text-align: center;
+			opacity: 0;
+			color: white;
+			background-color: rgba($gray-dark, 0.9);
+			@media #{$sm-down} {
+				background-color: rgba($gray-dark, 0.6);
+			}
+			@media #{$xs-only} {
+				opacity: 1;
+			}
+			> a {
+				color: white;
+				h4, h2 {
+					@include thin;
+				}
+			}	
+		}
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+		}
+	}
+	&.anchor-img-grid-1 {
+		.anchor-block-1 {
+		}
+		.anchor-block-2 {
+		}
+		.anchor-block-3,
+		.anchor-block-4 {
+			float: left;
+		}
+		@media #{$sm-up} {
+			.anchor-block-1 {
+				width: $container-sm / 2;
+				height: $container-sm / 2;;
+			}
+			.anchor-block-2 {
+				width: $container-sm / 2;
+				height: ($container-sm / 2) / 2;
+			}
+			.anchor-block-3,
+			.anchor-block-4 {
+				width: ($container-sm / 2) / 2;
+				height: ($container-sm / 2) / 2;
+			}
+			.anchor-block-3 {
+			}
+			.anchor-block-4 {
+			}
+		}
+		@media #{$md-up} {
+			.anchor-block-1 {
+				width: $container-md / 2;
+				height: $container-md / 2;
+			}
+			.anchor-block-2 {
+				width: $container-md / 2;
+				height: ($container-md / 2) / 2;
+			}
+			.anchor-block-3,
+			.anchor-block-4 {
+				width: ($container-md / 2) / 2;
+				height: ($container-md / 2) / 2;
+			}
+			.anchor-block-3 {
+			}
+			.anchor-block-4 {
+			}
+		}
+		@media #{$lg-up} {
+			.anchor-block-1 {
+				width: $container-lg / 2;
+				height: $container-lg / 2;
+			}
+			.anchor-block-2 {
+				width: $container-lg / 2;
+				height: ($container-lg / 2) / 2;
+			}
+			.anchor-block-3,
+			.anchor-block-4 {
+				width: ($container-lg / 2) / 2;
+				height: ($container-lg / 2) / 2;
+			}
+			.anchor-block-3 {
+			}
+			.anchor-block-4 {
+			}
+		}
+		@media #{$xs-only} {
+			[class*="anchor-block-"] {
+				width: 100%;
+				height: $container-sm / 2;
+			}
+		}
+	}
+}

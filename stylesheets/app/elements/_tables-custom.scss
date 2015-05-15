@@ -1,0 +1,24 @@
+.table-custom {
+	table {
+		thead {
+			tr {
+				td {
+					background-color: $gray;
+					text-transform: uppercase;
+					color: white;
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					&.highlight {
+						background-color: $gray-darker;
+						color: white;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.carousel-custom {
+	.carousel-control {
+		&.left,
+		&.right {
+			background: none;
+		}
+		&.right {}
+		.icon-prev,
+  	.icon-next {
+  		border: 1px solid $gray;
+  		padding: 7px;
+			width: 49px;
+			height: 49px;
+  		&:before {
+  			font-family: 'icomoon';
+  		}
+  	}
+		.icon-prev {
+			left: -50%;
+		}
+  	.icon-next {
+  		right: -49%;
+  	}
+  	.icon-prev {
+  		&:before {
+  			content: "\e607";
+  		}
+  	}
+  	.icon-next {
+  		&:before {
+  			content: "\e608";
+  		}
+  	}
+	}
+}

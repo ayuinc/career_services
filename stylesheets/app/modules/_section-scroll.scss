@@ -1,0 +1,104 @@
+// SECTION SCROLL
+#section-scroll {
+	@include position(fixed, 42% 0 null null);
+	z-index: 10000;
+	ul {
+		@include list-unstyled;
+		min-height: 91px;
+		background-color: rgba(white, 0.7);
+		padding: 9px 0 9px 9px;
+		// background: $blue-lighter;
+		// padding-right: $container-fluid;
+		li {
+			text-align: right;
+			padding: 3px 7px;
+			@include border-style(null solid null null);
+			@include border-width(null 1px null null);
+			@include border-color(null $blue null null);
+			// margin-bottom: $container-fluid / 2;
+			a {
+				display: block;
+				text-align: right;
+				// color: lighten($brand-primary, 7%);
+				color: $gray-dark;
+				position: relative;
+				padding-right: 18px;
+				&:hover,
+				&.active {
+					color: $brand-primary;
+					&:before {
+						background: $brand-primary;	
+					}
+				}
+				&:before,
+				&:after {
+					@include position(absolute, 7px 0 null null);
+					content: "";
+					// border: 1px solid $brand-primary;
+					background-color: $gray;
+					margin-left: 7px;
+				}
+				&:before {
+					width: 7px;
+					height: 7px;
+				}
+				&:after {
+					width: 3px;
+					height: 1px;
+				}
+			}
+		}
+	}
+}
+
+.btn-apply {
+	@include transform(translateX(110%));
+}
+
+.section-scroll-content {
+	padding: 7% 0;
+	@include bg-img-control;
+	@media #{$sm-down} {
+		&.flex-middle.bg-img-block {
+			padding: 0;
+			@include flex-middle-end;
+			.container {
+				padding: $container-fluid;
+				background-color: rgba(white, 0.9);
+				.text-white {
+					color: $gray-darker !important;
+					a {
+						color: $gray-darker !important;
+					}
+				}
+				.btn-white {
+					color: $gray-darker !important;
+					border-color: $gray-darker !important;
+				}
+				// .btn-outline {
+				// 	color: $gray-dark;
+				// 	border-color: $gray-dark;
+				// 	// display: none;
+				// }
+			}
+		} 
+		// .overlay {
+		// 	&.flex-middle {
+		// 		@include flex-middle-end;
+		// 	}
+		// }
+		.scroll-down {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

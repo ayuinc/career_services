@@ -1,0 +1,48 @@
+.list-carreras {
+	> li {
+		&:hover {
+			i,
+			h2 a span {
+				color: $brand-primary;
+			}
+			cursor: pointer;
+		}
+		> div {
+			i {
+				font-size: 70px;
+				font-size: rem(70px);
+				color: $gray;
+			}
+			h2 {
+				span {
+					color: $gray;
+					display: block;
+					text-transform: uppercase;
+					&:first-child {
+						font-size: $font-size-h5;
+					}
+					&:nth-child(2) {
+						font-size: $font-size-h3;
+					}
+					&:last-child {
+						font-size: $font-size-h6;
+						color: $gray;
+					}
+				}
+			}
+		}
+		@media #{$xs-only} {
+			@include normalize-text;
+			[data-href] > div,
+			[onclick] > div,
+			> div div,
+			h2 {
+				float: left;
+				display: block;			
+			}
+			h2 {
+				padding: 14px 0 0 14px;
+			}
+		}
+	}
+}
