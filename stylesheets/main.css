@@ -685,7 +685,7 @@ address {
       width: 968px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 968px; } }
+      width: 1168px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -2648,6 +2648,12 @@ tbody.collapse.in {
     width: 748px;
     padding-left: 14px;
     padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-md {
+    width: 968px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto; } }
 @media only screen and (max-width: 480px) {
   .container-xs {
@@ -2658,6 +2664,12 @@ tbody.collapse.in {
 
   .container-sm, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
   .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-md {
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
@@ -4669,8 +4681,8 @@ body.form-on-submit {
   font-weight: 900; }
 
 .item-pic {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background-position: center center; }
 
 .pic-teconectamos {
@@ -7112,8 +7124,8 @@ body.form-on-submit {
   font-weight: 900; }
 
 .item-pic {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background-position: center center; }
 
 .pic-teconectamos {
