@@ -685,7 +685,7 @@ address {
       width: 968px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1168px; } }
+      width: 968px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -8117,15 +8117,15 @@ body.form-on-submit {
       height: 242px; } }
   @media only screen and (min-width: 1200px) {
     .anchor-img-grid.anchor-img-grid-1 .anchor-block-1 {
-      width: 584px;
-      height: 584px; }
+      width: 484px;
+      height: 484px; }
     .anchor-img-grid.anchor-img-grid-1 .anchor-block-2 {
-      width: 584px;
-      height: 292px; }
+      width: 484px;
+      height: 242px; }
     .anchor-img-grid.anchor-img-grid-1 .anchor-block-3,
     .anchor-img-grid.anchor-img-grid-1 .anchor-block-4 {
-      width: 292px;
-      height: 292px; } }
+      width: 242px;
+      height: 242px; } }
   @media only screen and (max-width: 480px) {
     .anchor-img-grid.anchor-img-grid-1 [class*="anchor-block-"] {
       width: 100%;

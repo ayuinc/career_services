@@ -11,6 +11,12 @@
 		padding-right: $container-fluid;
 		margin: 0 auto;
 	}	
+	.container-md {
+		width: $container-md;
+		padding-left: $container-fluid;
+		padding-right: $container-fluid;
+		margin: 0 auto;
+	}
 }
 @media #{$xs-only} {
 	.container-xs {
@@ -24,6 +30,14 @@
 		padding-left: $container-fluid;
 		padding-right: $container-fluid;
 		margin: 0 auto;
-	}		
+	}	
+
+	.container-md {
+		width: 100%;
+		padding-left: $container-fluid;
+		padding-right: $container-fluid;
+		margin: 0 auto;
+	}	
 }
+
 

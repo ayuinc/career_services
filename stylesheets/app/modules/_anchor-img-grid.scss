@@ -87,17 +87,17 @@
 		}
 		@media #{$lg-up} {
 			.anchor-block-1 {
-				width: $container-lg / 2;
-				height: $container-lg / 2;
+				width: $container-md / 2;
+				height: $container-md / 2;
 			}
 			.anchor-block-2 {
-				width: $container-lg / 2;
-				height: ($container-lg / 2) / 2;
+				width: $container-md / 2;
+				height: ($container-md / 2) / 2;
 			}
 			.anchor-block-3,
 			.anchor-block-4 {
-				width: ($container-lg / 2) / 2;
-				height: ($container-lg / 2) / 2;
+				width: ($container-md / 2) / 2;
+				height: ($container-md / 2) / 2;
 			}
 			.anchor-block-3 {
 			}

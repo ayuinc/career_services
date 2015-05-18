@@ -19044,6 +19044,12 @@ ul.grid-list {
     width: 748px;
     padding-left: 14px;
     padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-md {
+    width: 968px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto; } }
 @media only screen and (max-width: 480px) {
   .container-xs {
@@ -19053,6 +19059,12 @@ ul.grid-list {
     margin: 0 auto; }
 
   .container-sm {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-md {
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
