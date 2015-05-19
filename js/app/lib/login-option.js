@@ -1,14 +1,3 @@
-/*$('.btn-ingresa').click(function(){
-	$('.overlay').fadeIn();
-	$('#modal').fadeIn();
-});
-$('#close').click(function(){
-	$('.overlay').fadeOut();		
-	$('#modal').fadeOut();
-	return false;
-});
-*/
-
 $('.btn-alumnos').click(function(){
 	$('h3').removeClass('bg-white');
 	$('h3').addClass('bg-gray-lighter');
@@ -48,7 +37,3 @@ $('.btn-regresar').click(function(){
 	$('#form-alumnos').removeClass('hidden');
 });
 
-/*$('.btn-empresas')click(function(){
-	$('form-empresas').removeClass('hidden');
-
-});*/
