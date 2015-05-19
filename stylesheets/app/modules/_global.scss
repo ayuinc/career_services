@@ -595,3 +595,21 @@ body {
 	height: 160px;
 	background-position: center center;
 }
+
+#myModal {
+	z-index: 20000;
+	background-color: rgba(128, 128, 128, 0.6);
+}
+
+.input-center{
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* #form-recupera {
+	display: none;
+}
+
+#form-empresas {
+	display: none;
+} */
