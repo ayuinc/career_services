@@ -4805,7 +4805,8 @@ body.form-on-submit {
 .pic-teconectamos {
   width: 160px;
   height: 160px;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 #myModal {
   z-index: 20000;
@@ -4821,11 +4822,12 @@ body.form-on-submit {
   left: 20px;
   text-align: left; }
 
-#te-conectamos .item-pic .overlay:hover {
+#te-conectamos .item-pic .overlay:hover,
+#te-conectamos .pic-teconectamos .overlay:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(50, 50, 50, 0.7); }
+  background-color: rgba(50, 50, 50, 0.4); }
 
 a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link, .language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text, #header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, .language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text, #header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, #header .tool-bar .search-form a.btn.form-text, #header-on-scroll .tool-bar .search-form a.btn.form-text, #header .tool-bar .search-form a.form-text.form-submit, #header-on-scroll .tool-bar .search-form a.form-text.form-submit, #header .tool-bar .search-form a.form-control.form-submit, #header-on-scroll .tool-bar .search-form a.form-control.form-submit,
 button.btn.form-control,
@@ -7269,7 +7271,8 @@ body.form-on-submit {
 .pic-teconectamos {
   width: 160px;
   height: 160px;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 #myModal {
   z-index: 20000;
@@ -7285,11 +7288,12 @@ body.form-on-submit {
   left: 20px;
   text-align: left; }
 
-#te-conectamos .item-pic .overlay:hover {
+#te-conectamos .item-pic .overlay:hover,
+#te-conectamos .pic-teconectamos .overlay:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(50, 50, 50, 0.7); }
+  background-color: rgba(50, 50, 50, 0.4); }
 
 #header, #header-on-scroll {
   position: relative;
