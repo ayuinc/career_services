@@ -4790,8 +4790,9 @@ body.form-on-submit {
 .border-grey {
   border: 1px solid #cccccc; }
 
-.text-black {
-  color: #000000; }
+.grid-list-hover > li:hover .border-grey {
+  border: none;
+  color: white; }
 
 .super-bold {
   font-weight: 900; }
@@ -7256,8 +7257,9 @@ body.form-on-submit {
 .border-grey {
   border: 1px solid #cccccc; }
 
-.text-black {
-  color: #000000; }
+.grid-list-hover > li:hover .border-grey {
+  border: none;
+  color: white; }
 
 .super-bold {
   font-weight: 900; }
