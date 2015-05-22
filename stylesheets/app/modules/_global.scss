@@ -620,6 +620,12 @@ body {
 	height: 160px;
 	background-position: center center;
 	position: relative;
+	@media only screen and (max-width: 480px) {
+  	width: 130px;
+  	height: 130px;
+  	border-radius: 50%;
+		margin: 12px auto;
+  }
 }
 
 #myModal {
