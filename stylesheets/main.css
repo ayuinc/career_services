@@ -4824,7 +4824,9 @@ body.form-on-submit {
       height: 80px; } }
 
 .bg-center {
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .pic-teconectamos {
   width: 160px;
@@ -7319,7 +7321,9 @@ body.form-on-submit {
       height: 80px; } }
 
 .bg-center {
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .pic-teconectamos {
   width: 160px;
