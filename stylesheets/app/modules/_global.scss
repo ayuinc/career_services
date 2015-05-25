@@ -586,6 +586,28 @@ body {
 	border: 1px solid rgb(204, 204, 204);
 }
 
+.btn-bg-outline-white{
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	&:hover {
+		border: 2px solid $brand-primary;
+		background-color: $brand-primary;
+		color: white;
+	}
+}
+
+.btn-bg-outline-primary{
+	border: 2px solid $brand-primary;
+	color: $brand-primary;
+	background-color: transparent;
+	&:hover {
+		border: 2px solid $brand-primary;
+		background-color: $brand-primary;
+		color: white;
+	}
+}
+
 .grid-list-hover > li:hover{
 	.border-grey{
 		border: none;

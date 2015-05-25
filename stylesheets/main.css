@@ -4805,6 +4805,24 @@ body.form-on-submit {
 .border-grey {
   border: 1px solid #cccccc; }
 
+.btn-bg-outline-white {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent; }
+  .btn-bg-outline-white:hover {
+    border: 2px solid #00BFDF;
+    background-color: #00BFDF;
+    color: white; }
+
+.btn-bg-outline-primary {
+  border: 2px solid #00BFDF;
+  color: #00BFDF;
+  background-color: transparent; }
+  .btn-bg-outline-primary:hover {
+    border: 2px solid #00BFDF;
+    background-color: #00BFDF;
+    color: white; }
+
 .grid-list-hover > li:hover .border-grey {
   border: none;
   color: white; }
@@ -7306,6 +7324,24 @@ body.form-on-submit {
 
 .border-grey {
   border: 1px solid #cccccc; }
+
+.btn-bg-outline-white {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent; }
+  .btn-bg-outline-white:hover {
+    border: 2px solid #00BFDF;
+    background-color: #00BFDF;
+    color: white; }
+
+.btn-bg-outline-primary {
+  border: 2px solid #00BFDF;
+  color: #00BFDF;
+  background-color: transparent; }
+  .btn-bg-outline-primary:hover {
+    border: 2px solid #00BFDF;
+    background-color: #00BFDF;
+    color: white; }
 
 .grid-list-hover > li:hover .border-grey {
   border: none;
