@@ -4815,11 +4815,11 @@ body.form-on-submit {
     color: white; }
 
 .btn-bg-outline-primary {
-  border: 2px solid #00BFDF;
+  border: 1px solid #00BFDF;
   color: #00BFDF;
   background-color: transparent; }
   .btn-bg-outline-primary:hover {
-    border: 2px solid #00BFDF;
+    border: 1px solid #00BFDF;
     background-color: #00BFDF;
     color: white; }
 
@@ -7343,11 +7343,11 @@ body.form-on-submit {
     color: white; }
 
 .btn-bg-outline-primary {
-  border: 2px solid #00BFDF;
+  border: 1px solid #00BFDF;
   color: #00BFDF;
   background-color: transparent; }
   .btn-bg-outline-primary:hover {
-    border: 2px solid #00BFDF;
+    border: 1px solid #00BFDF;
     background-color: #00BFDF;
     color: white; }
 
