@@ -4630,8 +4630,7 @@ img.icon-utec {
   z-index: 7;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  background-position-y: 0px; }
+  background-size: cover; }
   @media only screen and (max-width: 480px) {
     .img-placeholder {
       background-position-y: 56px;
@@ -7133,8 +7132,7 @@ img.icon-utec {
   z-index: 7;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  background-position-y: 0px; }
+  background-size: cover; }
   @media only screen and (max-width: 480px) {
     .img-placeholder {
       background-position-y: 56px;

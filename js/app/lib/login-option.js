@@ -1,7 +1,6 @@
 $('.btn-alumnos').click(function(){
-	$('#myModal h3').removeClass('bg-gray-lighter');
-	$('#myModal h3').addClass('bg-white');
 	$('#myModal .btn-alumnos h3').removeClass('bg-white');
+	$('#myModal .btn-empresas h3').addClass('bg-white');
 	$('#myModal .btn-alumnos h3').addClass('bg-gray-lighter');
 	$('#form-alumnos').removeClass('hidden');
 	$('#form-empresas').addClass('hidden');
@@ -9,9 +8,8 @@ $('.btn-alumnos').click(function(){
 });
 
 $('.btn-empresas').click(function(){
-	$('#myModal h3').removeClass('bg-gray-lighter');
-	$('#myModal h3').addClass('bg-white');
 	$('#myModal .btn-empresas h3').removeClass('bg-white');
+	$('#myModal .btn-alumnos h3').addClass('bg-white');
 	$('#myModal .btn-empresas h3').addClass('bg-gray-lighter');
 	$('#form-empresas').removeClass('hidden');
 	$('#form-alumnos').addClass('hidden');
@@ -35,5 +33,7 @@ $('.close').click(function(){
 $('.btn-regresar').click(function(){
 	$('#form-recupera').addClass('hidden');
 	$('#form-alumnos').removeClass('hidden');
+	$('#myModal .btn-alumnos h3').removeClass('bg-white');
+	$('#myModal .btn-empresas h3').removeClass('bg-gray-lighter');
 });
 
