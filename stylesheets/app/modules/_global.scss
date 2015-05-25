@@ -608,6 +608,18 @@ body {
 	}
 }
 
+.btn-selected{
+	background-color: white;
+	border: 1px solid $gray-light;
+}
+
+
+.btn-notselected{
+	background-color: $gray-light;
+	border: 1px solid $gray-light;
+}
+
+
 .grid-list-hover > li:hover{
 	.border-grey{
 		border: none;
