@@ -4872,6 +4872,10 @@ body.form-on-submit {
 .input-center {
   width: 50%;
   margin: 0 auto; }
+  @media only screen and (max-width: 480px) {
+    .input-center {
+      width: 100%;
+      font-size: 11px; } }
 
 #te-preparamos .overlay h2 {
   position: absolute;
@@ -7400,6 +7404,10 @@ body.form-on-submit {
 .input-center {
   width: 50%;
   margin: 0 auto; }
+  @media only screen and (max-width: 480px) {
+    .input-center {
+      width: 100%;
+      font-size: 11px; } }
 
 #te-preparamos .overlay h2 {
   position: absolute;
