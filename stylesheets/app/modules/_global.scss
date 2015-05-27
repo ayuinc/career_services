@@ -608,13 +608,13 @@ body {
 	}
 }
 
-.btn-selected{
+.btn-notselected{
 	background-color: white;
 	border: 1px solid $gray-light;
 }
 
 
-.btn-notselected{
+.btn-selected{
 	background-color: $gray-light;
 	border: 1px solid $gray-light;
 }
@@ -623,7 +623,9 @@ body {
 .grid-list-hover > li:hover{
 	.border-grey{
 		border: none;
-		color: white;
+		h5, h6{
+			color: white;
+		}
 	}
 }
 
@@ -696,6 +698,16 @@ body {
 		height: 100%;
 		position: absolute;
 		background-color: rgba(50, 50, 50, 0.4);
+	}
+}
+
+.pager{
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 

@@ -4823,17 +4823,18 @@ body.form-on-submit {
     background-color: #00BFDF;
     color: white; }
 
-.btn-selected {
+.btn-notselected {
   background-color: white;
   border: 1px solid #e3e3e3; }
 
-.btn-notselected {
+.btn-selected {
   background-color: #e3e3e3;
   border: 1px solid #e3e3e3; }
 
 .grid-list-hover > li:hover .border-grey {
-  border: none;
-  color: white; }
+  border: none; }
+  .grid-list-hover > li:hover .border-grey h5, .grid-list-hover > li:hover .border-grey h6 {
+    color: white; }
 
 .super-bold {
   font-weight: 900; }
@@ -4894,6 +4895,14 @@ body.form-on-submit {
   height: 100%;
   position: absolute;
   background-color: rgba(50, 50, 50, 0.4); }
+
+.pager {
+  list-style: none;
+  text-align: center; }
+  .pager li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link, .language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text, #header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, .language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text, #header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, #header .tool-bar .search-form a.btn.form-text, #header-on-scroll .tool-bar .search-form a.btn.form-text, #header .tool-bar .search-form a.form-text.form-submit, #header-on-scroll .tool-bar .search-form a.form-text.form-submit, #header .tool-bar .search-form a.form-control.form-submit, #header-on-scroll .tool-bar .search-form a.form-control.form-submit,
 button.btn.form-control,
@@ -7355,17 +7364,18 @@ body.form-on-submit {
     background-color: #00BFDF;
     color: white; }
 
-.btn-selected {
+.btn-notselected {
   background-color: white;
   border: 1px solid #e3e3e3; }
 
-.btn-notselected {
+.btn-selected {
   background-color: #e3e3e3;
   border: 1px solid #e3e3e3; }
 
 .grid-list-hover > li:hover .border-grey {
-  border: none;
-  color: white; }
+  border: none; }
+  .grid-list-hover > li:hover .border-grey h5, .grid-list-hover > li:hover .border-grey h6 {
+    color: white; }
 
 .super-bold {
   font-weight: 900; }
@@ -7426,6 +7436,14 @@ body.form-on-submit {
   height: 100%;
   position: absolute;
   background-color: rgba(50, 50, 50, 0.4); }
+
+.pager {
+  list-style: none;
+  text-align: center; }
+  .pager li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 #header, #header-on-scroll {
   position: relative;
