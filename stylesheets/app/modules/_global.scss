@@ -582,6 +582,10 @@ body {
 	}
 }
 
+/*
+Career Services 
+*/
+
 .border-grey{
 	border: 1px solid rgb(204, 204, 204);
 }
@@ -682,6 +686,13 @@ body {
   bottom: 10px;
   left: 20px;
   text-align: left;
+}
+
+#te-preparamos .anchor-block-1{
+	@media only screen and (max-width: 480px) {
+  	width: 100%;
+  	height: 484px;
+  }
 }
 
 #te-preparamos .anchor-block-2{

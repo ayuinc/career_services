@@ -2752,39 +2752,36 @@ tbody.collapse.in {
   -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
   box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15); }
 
+/*
+	Containers-custom
+*/
+.container-fluid {
+  width: 100%; }
+
 @media only screen and (min-width: 768px) {
-  .container-xs {
-    width: 508px;
+  .container-xs,
+  .container-sm,
+  .breadcrumbs-light .pane-page-breadcrumb .pane-content,
+  .breadcrumbs-dark .pane-page-breadcrumb .pane-content,
+  .container-md {
     padding-left: 14px;
     padding-right: 14px;
     margin: 0 auto; }
 
+  .container-xs {
+    width: 508px; }
+
   .container-sm, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
   .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
-    width: 748px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
+    width: 748px; }
 
   .container-md {
-    width: 968px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; } }
+    width: 968px; } }
 @media only screen and (max-width: 480px) {
-  .container-xs {
-    width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
-
-  .container-sm, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
-  .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
-    width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
-
+  .container-xs,
+  .container-sm,
+  .breadcrumbs-light .pane-page-breadcrumb .pane-content,
+  .breadcrumbs-dark .pane-page-breadcrumb .pane-content,
   .container-md {
     width: 100%;
     padding-left: 14px;
@@ -4802,6 +4799,9 @@ img.icon-utec {
 body.form-on-submit {
   overflow: hidden; }
 
+/*
+Career Services 
+*/
 .border-grey {
   border: 1px solid #cccccc; }
 
@@ -4883,6 +4883,11 @@ body.form-on-submit {
   bottom: 10px;
   left: 20px;
   text-align: left; }
+
+@media only screen and (max-width: 480px) {
+  #te-preparamos .anchor-block-1 {
+    width: 100%;
+    height: 484px; } }
 
 @media only screen and (max-width: 480px) {
   #te-preparamos .anchor-block-2 {
@@ -6588,7 +6593,6 @@ textarea:-ms-input-placeholder {
     padding-left: 0;
     list-style: none;
     margin: 0;
-    text-transform: capitalize;
     font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
     font-weight: 100;
     font-style: normal; }
@@ -7343,6 +7347,9 @@ img.icon-utec {
 body.form-on-submit {
   overflow: hidden; }
 
+/*
+Career Services 
+*/
 .border-grey {
   border: 1px solid #cccccc; }
 
@@ -7424,6 +7431,11 @@ body.form-on-submit {
   bottom: 10px;
   left: 20px;
   text-align: left; }
+
+@media only screen and (max-width: 480px) {
+  #te-preparamos .anchor-block-1 {
+    width: 100%;
+    height: 484px; } }
 
 @media only screen and (max-width: 480px) {
   #te-preparamos .anchor-block-2 {

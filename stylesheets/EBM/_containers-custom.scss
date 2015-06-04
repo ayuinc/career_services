@@ -1,43 +1,37 @@
+/*
+	Containers-custom
+*/
+.container-fluid {
+	width: 100%;
+}
+
 @media #{$sm-up} {
-	.container-xs {
-		width: $container-xs;
+	.container-xs,
+	.container-sm,
+	.container-md {
 		padding-left: $container-fluid;
 		padding-right: $container-fluid;
 		margin: 0 auto;
+	}
+	.container-xs {
+		width: $container-xs;
 	}
 	.container-sm {
 		width: $container-sm;
-		padding-left: $container-fluid;
-		padding-right: $container-fluid;
-		margin: 0 auto;
 	}	
 	.container-md {
 		width: $container-md;
-		padding-left: $container-fluid;
-		padding-right: $container-fluid;
-		margin: 0 auto;
-	}
+	}	
 }
 @media #{$xs-only} {
-	.container-xs {
-		width: 100%;
-		padding-left: $container-fluid;
-		padding-right: $container-fluid;
-		margin: 0 auto;
-	}
-	.container-sm {
-		width: 100%;
-		padding-left: $container-fluid;
-		padding-right: $container-fluid;
-		margin: 0 auto;
-	}	
-
+	.container-xs,
+	.container-sm,
 	.container-md {
 		width: 100%;
 		padding-left: $container-fluid;
 		padding-right: $container-fluid;
 		margin: 0 auto;
-	}	
+	}
+	.container-sm {}	
+	.container-md {}		
 }
-
-

@@ -39,7 +39,7 @@
 			@extend .container-sm;
 			.breadcrumb {
 				@include list-unstyled;
-				text-transform: capitalize;
+				// text-transform: capitalize;
 				@include thin;
 			}
 		}

@@ -19033,37 +19033,31 @@ ul.grid-list {
     width: 140px;
     width: 10rem; }
 
+/*
+	Containers-custom
+*/
+.container-fluid {
+  width: 100%; }
+
 @media only screen and (min-width: 768px) {
-  .container-xs {
-    width: 508px;
+  .container-xs,
+  .container-sm,
+  .container-md {
     padding-left: 14px;
     padding-right: 14px;
     margin: 0 auto; }
 
+  .container-xs {
+    width: 508px; }
+
   .container-sm {
-    width: 748px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
+    width: 748px; }
 
   .container-md {
-    width: 968px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; } }
+    width: 968px; } }
 @media only screen and (max-width: 480px) {
-  .container-xs {
-    width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
-
-  .container-sm {
-    width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin: 0 auto; }
-
+  .container-xs,
+  .container-sm,
   .container-md {
     width: 100%;
     padding-left: 14px;
